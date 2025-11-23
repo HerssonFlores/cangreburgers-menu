@@ -1,131 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cangreburgers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cangreburgers</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url("https://i.postimg.cc/T3Mry0hL/bob-background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            background: linear-gradient(#0099ff, #0044aa);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
 
-header {
-    background: rgba(255, 230, 0, 0.9);
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    border-bottom: 5px solid red;
-}
+        .menu-item {
+            background: rgba(255,255,255,0.2);
+            margin: 15px auto;
+            padding: 15px;
+            width: 85%;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
+        img {
+            width: 250px;
+            border-radius: 15px;
+        }
 
-.card {
-    background: rgba(255,255,255,0.9);
-    width: 250px;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    background: green;
-    color: white;
-    font-weight: bold;
-}
-</style>
+        button {
+            background: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-🍔 Cangreburgers 🍍
-</header>
+    <header style="text-align:center; padding: 20px;">
+        <img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8138.jpeg?raw=1"
+        alt="Cangreburgers Logo"
+        style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:4px solid #ffcc00;">
+        
+        <h1 style="color:#ffcc00; text-shadow: 2px 2px #000;">
+            Cangreburgers
+        </h1>
+    </header>
 
-<h2>Menú</h2>
+    <div class="menu-item">
+        <h2>Clásica</h2>
+        <img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8132.jpeg?raw=1">
+        <p>Carne jugosa, queso, lechuga y salsa secreta</p>
+        <button>Ordenar</button>
+    </div>
 
-<div class="menu">
+    <div class="menu-item">
+        <h2>Doble</h2>
+        <img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8133.jpeg?raw=1">
+        <p>Doble carne y doble queso 🔥</p>
+        <button>Ordenar</button>
+    </div>
 
-<div class="card">
-<img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8132.jpeg?raw=1">
-<h3>CangreBurger Clásica</h3>
-<p>$60</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20una%20CangreBurger%20Clásica" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8133.jpeg?raw=1">
-<h3>CangreBurger Doble</h3>
-<p>$85</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20una%20CangreBurger%20Doble" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8134.jpeg?raw=1">
-<h3>CangreBurger BBQ</h3>
-<p>$75</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20una%20CangreBurger%20BBQ" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-</div>
-
-<h2>🍟 Papas y Bebidas 🥤</h2>
-
-<div class="menu">
-
-<div class="card">
-<h3>Papas</h3>
-<p>$25</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20unas%20papas" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-<div class="card">
-<h3>Refresco</h3>
-<p>$20</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20un%20refresco" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-<div class="card">
-<h3>Combo</h3>
-<p>$90</p>
-<a href="https://wa.me/525528716239?text=Hola%20quiero%20un%20combo%20(hamburguesa,%20papas,%20y%20refresco)" target="_blank">
-<button>Ordenar</button>
-</a>
-</div>
-
-</div>
+    <div class="menu-item">
+        <h2>Especial</h2>
+        <img src="https://raw.githubusercontent.com/HerssonFlores/cangreburgers-menu/main/images/IMG_8134.jpeg?raw=1">
+        <p>La favorita del chef 🍍</p>
+        <button>Ordenar</button>
+    </div>
 
 </body>
 </html>
