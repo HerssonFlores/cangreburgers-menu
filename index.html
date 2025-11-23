@@ -3,56 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CangreBurgers</title>
+<title>Cangreburgers</title>
 
 <style>
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f6d84b url('https://i.imgur.com/wtX4KOX.png');
-    background-size: cover;
     text-align: center;
+    background: url("https://i.postimg.cc/T3Mry0hL/bob-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #e63946;
-    color: white;
+    background: rgba(255, 230, 0, 0.9);
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 3px 3px #b22222;
+    border-bottom: 5px solid red;
 }
 
 .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 20px;
 }
 
 .card {
-    background: white;
-    border-radius: 15px;
+    background: rgba(255,255,255,0.9);
+    width: 250px;
+    margin: 15px;
     padding: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .card img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-.button {
-    background: #25d366;
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
     color: white;
-    padding: 15px;
-    display: block;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
+    padding: 15px 20px;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 </style>
@@ -61,35 +63,35 @@ header {
 <body>
 
 <header>
-🍔 CANGREBURGERS 🍔
+🍔 Cangreburgers 🍍
 </header>
 
-<h2>Menú Oficial</h2>
+<h2>Menú</h2>
 
 <div class="menu">
 
 <div class="card">
-<img src="https://i.imgur.com/fgB9v4p.png">
+<img src="https://i.postimg.cc/zXqjfQ5L/burger1.png">
 <h3>CangreBurger Clásica</h3>
 <p>$60</p>
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/BJbqvXk.png">
+<img src="https://i.postimg.cc/5NQgjK0V/burger2.png">
 <h3>CangreBurger Doble</h3>
 <p>$85</p>
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/JZvo2zN.png">
+<img src="https://i.postimg.cc/FRP0JqMz/burger3.png">
 <h3>CangreBurger BBQ</h3>
 <p>$75</p>
 </div>
 
 </div>
 
-<a class="button" href="https://wa.me/525528716239?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20CangreBurgers%20🍔">
-📲 Pedir por WhatsApp
+<a class="whatsapp" href="https://wa.me/525528716239" target="_blank">
+📲 Ordenar por WhatsApp
 </a>
 
 </body>
